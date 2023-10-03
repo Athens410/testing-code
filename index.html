@@ -46,7 +46,7 @@ background: linear-gradient(to top, #c79081 0%, #dfa579 100%);
 }
 
 .responsive-image {
-  max-width: 50%;
+  max-width: 100%;
 border-radius: 17px;
 margin: 0 auto;
   height: auto; 
@@ -54,10 +54,13 @@ margin: 0 auto;
 }
 @media screen and (max-width: 800px){
 .responsive-image{
-  max-width: 50%;
+  max-width: 100%;
+   height: auto;
 }
 .container{
-  
+  display: grid;
+        grid-gap: 15px;
+  grid-template-columns: 1fr;
 }
 }
 
