@@ -42,8 +42,15 @@ background: linear-gradient(to top, #c79081 0%, #dfa579 100%);
 }
 
 .responsive-image {
-  max-width: 100%; 
+  display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
   height: auto; 
+}
+@media (max-width: 768px){
+  .responsive-image {
+grid-template-columns: 1fr;
+  }
 }
 
 </style>
@@ -68,6 +75,12 @@ background: linear-gradient(to top, #c79081 0%, #dfa579 100%);
     <div class="container">
    <h1>✨🧇✨Cinnamon Roll Waffles Recipie✨🧇✨</h1>
 <img  class="responsive-image" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/917/original/Untitled_copy.png?1696367353" alt="" srcset="">
+<img class="responsive-image"
+  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/917/original/Untitled_copy.png?1696367353"
+  alt="" srcset="">
+  <img class="responsive-image"
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/917/original/Untitled_copy.png?1696367353"
+    alt="" srcset="">
     </div>
 </body>
 </html>
