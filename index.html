@@ -36,21 +36,27 @@ background: linear-gradient(to top, #c79081 0%, #dfa579 100%);
     padding-top:55px ;
     padding: 44px;
 }
-.container {
+.container img{
   text-align: center; 
   margin: 0 auto;
+    display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr  1fr 1fr;
+
 }
 
 .responsive-image {
-  display: grid;
-        grid-gap: 15px;
-        grid-template-columns: 1fr 1fr 1fr;
+  max-width: 50%;
+border-radius: 17px;
+margin: 0 auto;
   height: auto; 
+
 }
-@media (max-width: 768px){
-  .responsive-image {
-grid-template-columns: 1fr;
-  }
+@media screen and (max-width: 800px){
+.responsive-image{
+  max-width: 50%;
+}
+
 }
 
 </style>
@@ -81,6 +87,7 @@ grid-template-columns: 1fr;
   <img class="responsive-image"
     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/917/original/Untitled_copy.png?1696367353"
     alt="" srcset="">
+  
     </div>
 </body>
 </html>
