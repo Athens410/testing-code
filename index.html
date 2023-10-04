@@ -21,7 +21,7 @@
 </head>
 <style>
 body {
-background: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+background: linear-gradient(to top, #09203f 0%, #091c2a 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; 
@@ -46,7 +46,7 @@ background: linear-gradient(to top, #c79081 0%, #dfa579 100%);
 }
 
 .responsive-image {
-  max-width: 100%;
+  max-width: 50%;
 border-radius: 17px;
 margin: 0 auto;
   height: auto; 
@@ -54,7 +54,7 @@ margin: 0 auto;
 }
 @media screen and (max-width: 800px){
 .responsive-image{
-  max-width: 100%;
+
    height: auto;
 }
 .container{
@@ -63,36 +63,90 @@ margin: 0 auto;
   grid-template-columns: 1fr;
 }
 }
+.navbar-nav .nav-link,
+.navbar-brand {
+  color: white !important;
+   font-family: 'Red Hat Display', sans-serif;
+}
+.navbar-toggler button{
+  color: white;
+}
+.honey-button {
+    background-color: #D2691E;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   margin: 10px;
+    padding: 12px;
+    border: 5px ;
+    border-radius: 5px ;
+}
 
+.honey-button:hover {
+    background-color: #8B4513;
+}
+.waffles-description {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    text-align: center;
+}
+.star{
+  max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  
+}
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f4f4f423; ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html" title="Homepage">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="/index.html" title="Homepage">Homepage</a>
-            <a class="nav-link" href="/about.html" title="About me">About Me</a>
-            <a class="nav-link" href="/work.html" title="My Work">My Work</a>
-            <a class="nav-link" href="/contact.html" title="Get In Touch">Contact me</a>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f4f4f400; ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html" title="Homepage">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="/index.html" title="Homepage">Homepage</a>
+          <a class="nav-link" href="/about.html" title="About me">About Me</a>
+          <a class="nav-link" href="/work.html" title="My Work">My Work</a>
+          <a class="nav-link" href="/contact.html" title="Get In Touch">Contact me</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+
     <div class="container">
    <h1>✨🧇✨Cinnamon Roll Waffles Recipie✨🧇✨</h1>
-<img  class="responsive-image" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/917/original/Untitled_copy.png?1696367353" alt="" srcset="">
-<img class="responsive-image"
-  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/917/original/Untitled_copy.png?1696367353"
-  alt="" srcset="">
-  <img class="responsive-image"
-    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/917/original/Untitled_copy.png?1696367353"
-    alt="" srcset="">
-  
+  <div class="row">
+ 
+      <img class="responsive-image"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/917/original/Untitled_copy.png?1696367353"
+        alt="" srcset="">
+   
+    <div class="col-md-6">
+      <h2 class="mb-3">My Favourite</h2>
+      <p>
+        Cinnamon roll waffles are absolutely amazing! The combination of the sweet, cinnamon-infused waffle batter
+        and the creamy icing drizzle on top is pure bliss. These waffles are not just a breakfast treat; they're a
+        warm and comforting hug in food form. The smell of cinnamon filling the air as they cook is enough to make
+        anyone's mouth water. They are the perfect indulgence for a lazy weekend morning or a special brunch
+        occasion. I love them because they bring warmth and happiness to my taste buds, and they're a delightful
+        twist on classic waffles.
+      </p>
+      <div class="mb-5 mt-5">
+        <button class="honey-button">Learn More</button>
+      </div>
+    </div>
+  </div>
+ 
     </div>
 </body>
 </html>
