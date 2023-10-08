@@ -36,33 +36,26 @@ background: linear-gradient(to top, #09203f 0%, #091c2a 100%);
     padding-top:55px ;
     padding: 44px;
 }
-.container img{
-  text-align: center; 
-  margin: 0 auto;
-    display: grid;
-        grid-gap: 15px;
-        grid-template-columns: 1fr  1fr 1fr;
-
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
-
 .responsive-image {
-  max-width: 50%;
-border-radius: 17px;
-margin: 0 auto;
-  height: auto; 
-
+    max-width: 100%; 
+    width: 100%; 
+    height: auto;
+    border-radius: 17px;
+    margin: 0 auto;
 }
-@media screen and (max-width: 800px){
-.responsive-image{
 
-   height: auto;
-}
 .container{
   display: grid;
         grid-gap: 15px;
   grid-template-columns: 1fr;
 }
-}
+
 .navbar-nav .nav-link,
 .navbar-brand {
   color: white !important;
@@ -103,6 +96,17 @@ margin: 0 auto;
     text-align: center;
   
 }
+p {
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+}
+h2{
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+}
+.col-6{
+ margin: 0 auto;
+}
 </style>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f4f4f400; ">
@@ -126,11 +130,13 @@ margin: 0 auto;
     <div class="container">
    <h1>✨🧇✨Cinnamon Roll Waffles Recipie✨🧇✨</h1>
   <div class="row">
- 
+ <div class="col-6">
       <img class="responsive-image"
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/917/original/Untitled_copy.png?1696367353"
         alt="" srcset="">
    
+</div>
+
     <div class="col-md-6">
       <h2 class="mb-3">My Favourite</h2>
       <p>
