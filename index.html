@@ -83,15 +83,7 @@ background: linear-gradient(to top, #09203f 0%, #091c2a 100%);
 .honey-button:hover {
     background-color: #8B4513;
 }
-.waffles-description {
-    background-color: rgb(145, 87, 87);
-    padding: 6px 200px; 
-    border-radius: 5px;
-    font-size: 16px;
-  
 
-  
-}
 .star{
   max-width: 800px;
     margin: 0 auto;
@@ -122,10 +114,30 @@ h2{
 
 }
 
-  li ul {
-    color: white;
-  }
+ 
+  .waffles-description {
+    background-color: rgb(145, 87, 87);
+    padding: 6px 200px; 
+    border-radius: 5px;
+    font-size: 16px;
+  text-align: center;
+  color: white;
+
+    flex-direction: column;
+    
+ position: relative;
+ 
   
+  
+}
+.waffles-description ul {
+  
+    padding: 0; 
+}
+.waffles-description li {
+    margin: 8px 0;
+    
+}
 
 </style>
 <body>
@@ -178,20 +190,20 @@ h2{
 
             <div class="containers">
     <div class="round">
-      <div class="waffles-description">
-        <h4>Ingredients:</h4>
-        <b>For the Waffle Batter:</b>
-        <p>
-         2 cups all-purpose flour
-         2 tablespoons granulated sugar
-          1 tablespoon baking powder
-          1/2 teaspoon salt
-          2 large eggs
-          1 3/4 cups milk
-          1/3 cup vegetable oil
-          1 teaspoon vanilla extract
-        </p>
-      </div>
+    <div class="waffles-description">
+      <h4>Ingredients:</h4>
+      <b>For the Waffle Batter:</b>
+      <ul>
+        <li>2 cups all-purpose flour</li>
+        <li>2 tablespoons granulated sugar</li>
+        <li>1 tablespoon baking powder</li>
+        <li>1/2 teaspoon salt</li>
+        <li>2 large eggs</li>
+        <li>1 3/4 cups milk</li>
+        <li>1/3 cup vegetable oil</li>
+        <li>1 teaspoon vanilla extract</li>
+      </ul>
+    </div>
     </div>
   </div>
     </div>
