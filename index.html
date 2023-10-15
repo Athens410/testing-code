@@ -40,8 +40,9 @@ body {
 .color-box {
     width: 100px;
     height: 100%;
-    animation: moveLeftRight 3s linear infinite;
+    animation: moveLeftRight 12s linear infinite;
 }
+
 
 .red {
     background-color: rgb(255, 112, 198);
@@ -49,6 +50,7 @@ body {
 
 .green {
     background-color: rgb(232, 0, 205);
+    width: 100%;
 }
 
 .blue {
@@ -57,16 +59,16 @@ body {
 
 @keyframes moveLeftRight {
     0% {
-        transform: translateX(10%);
+        transform: translateX(0%);
     }
     33% {
-        transform: translateX(100);
-    }
-    66% {
         transform: translateX(100%);
     }
+    66% {
+        transform: translateX(200%);
+    }
     100% {
-        transform: translateX(30);
+        transform: translateX(0%);
     }
 }
 
