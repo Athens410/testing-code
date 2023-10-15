@@ -20,6 +20,7 @@
       rel="stylesheet" />
         <title>Cinnamon Roll Waffles</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="script.js"></script>
 </head>
 <style>
 
@@ -67,7 +68,31 @@
   <h1>Your Name</h1>
 </div>
   
-    
+   
+   
+   
+   
+   
+   <script>
+
+  const bar = document.querySelector('.bar');
+  const squares = document.querySelectorAll('.square');
+  let index = 0;
+
+  setInterval(() => {
+    squares.forEach((square) => {
+      square.style.opacity = '0';
+    });
+
+    squares[index].style.opacity = '1';
+    index = (index + 1) % squares.length;
+  }, 1000);
+
+
+
+
+
+    </script>
  
 </body>
 </html>
