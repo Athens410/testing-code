@@ -24,38 +24,7 @@
 </head>
 <style>
 
-   .bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.bar h1 {
-  color: white;
-  font-size: 20px;
-  margin: 0;
-  padding: 0 10px;
-}
-
-.square {
-  width: 33.33%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.square.white { background-color: white; }
-.square.black { background-color: black; }
-.square.gray { background-color: gray; }
-   
  
-    
    
 
 
@@ -74,18 +43,6 @@
    
    <script>
 
-  const bar = document.querySelector('.bar');
-  const squares = document.querySelectorAll('.square');
-  let index = 0;
-
-  setInterval(() => {
-    squares.forEach((square) => {
-      square.style.opacity = '0';
-    });
-
-    squares[index].style.opacity = '1';
-    index = (index + 1) % squares.length;
-  }, 1000);
 
 
 
