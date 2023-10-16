@@ -23,6 +23,54 @@
         <script src="script.js"></script>
 </head>
 <style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-bar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.color-box {
+    width: 100px;
+    height: 100%;
+    animation: moveLeftRight 5s linear infinite; /* Adjust the total animation duration to 15s */
+}
+
+.red {
+    background: linear-gradient(-45deg, rgba(255, 112, 198, 0.7), transparent);
+    width: 100%;
+    animation-delay: 0s; /* Start immediately */
+}
+
+.green {
+    background: linear-gradient(-45deg, rgba(232, 0, 205, 0.7), transparent);
+    width: 100%;
+    animation-delay: 0s; 
+}
+
+.blue {
+    background: linear-gradient(-45deg, rgba(255, 0, 170, 0.7), transparent);
+    width: 100%;
+    animation-delay: 2s; 
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(300%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
 
 
 
@@ -31,12 +79,24 @@
 <body>
  
 <div class="bottom-bar">
-  <div class="color red"></div>
-  <div class="color green"></div>
-  <div class="color blue"></div>
+  <div class="color-box red"></div>
+  <div class="color-box green"></div>
+  <div class="color-box blue"></div>
 </div>
+  
+   
+   
+   
+   
+   
+   <script>
 
-<script src="script.js"></script>
+
+
+
+
+
+    </script>
  
 </body>
 </html>
