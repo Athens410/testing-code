@@ -149,27 +149,7 @@ margin: 0 auto;
 
    
 <script>
-  var image = document.querySelector(".col-md-6 img");
-  var paragraph = document.querySelector(".col-md-6 p");
-  var lastScrollY = window.scrollY;
 
-  function handleScroll() {
-    var currentScrollY = window.scrollY;
-
-    if (currentScrollY > lastScrollY) {
-
-      image.classList.remove("fade-in");
-      paragraph.classList.remove("fade-in");
-    } else {
-
-      image.classList.add("fade-in");
-      paragraph.classList.add("fade-in");
-    }
-
-    lastScrollY = currentScrollY;
-  }
-
-  window.addEventListener("scroll", handleScroll);
 </script>
 
 
