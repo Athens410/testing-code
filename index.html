@@ -89,6 +89,12 @@ margin: 0 auto;
     opacity: 0;
     transition: opacity 4s;
 }
+.fade-out{
+
+ opacity: 3;
+    transition: opacity 4s;
+
+}
 </style>
 <body >
  
@@ -148,27 +154,29 @@ margin: 0 auto;
   </div>
 
    
-  <script>
-    var image = document.querySelector(".col-md-6 img");
-    var paragraph = document.querySelector(".col-md-6 p");
-    var lastScrollTop = 0;
+<script>
+  var image = document.querySelector(".col-md-6 img");
+  var paragraph = document.querySelector(".col-md-6 p");
+  var lastScrollY = window.scrollY;
 
-    window.addEventListener("scroll", function () {
-      var st = window.pageYYOffset || document.documentElement.scrollTop;
+  function handleScroll() {
+    var currentScrollY = window.scrollY;
 
-      if (st > lastScrollTop) {
+    if (currentScrollY > lastScrollY) {
 
-        image.classList.remove("fade-in");
-        paragraph.classList.remove("fade-in");
-      } else {
+      image.classList.remove("fade-in");
+      paragraph.classList.remove("fade-in");
+    } else {
 
-        image.classList.add("fade-in");
-        paragraph.classList.add("fade-in");
-      }
+      image.classList.add("fade-out");
+      paragraph.classList.add("fade-out");
+    }
 
-      lastScrollTop = st;
-    });
-  </script>
+    lastScrollY = currentScrollY;
+  }
+
+  window.addEventListener("scroll", handleScroll);
+</script>
 
 </body>
 </html>
