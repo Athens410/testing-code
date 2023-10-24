@@ -34,7 +34,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(45deg, rgb(0, 255, 55), rgba(17, 255, 243, 0.7), rgba(4, 0, 255, 0.3));
+    background: linear-gradient(45deg, rgb(0, 255, 55), rgb(255, 17, 176), rgb(4, 0, 255));
     filter: brightness(2.8) blur(6px); 
     animation: moveLeftRight 4s linear infinite;
 }
@@ -85,7 +85,10 @@ margin: 0 auto;
 }
 }
 
-
+.fade-in {
+    opacity: 0;
+    transition: opacity 4s;
+}
 </style>
 <body >
  
@@ -145,6 +148,21 @@ margin: 0 auto;
   </div>
 
    
- 
+  <script>
+
+    window.addEventListener("scroll", function () {
+      var image = document.querySelector(".col-md-6 img");
+      var paragraph = document.querySelector(".col-md-6 p");
+      var imageOffset = image.getBoundingClientRect().top;
+      var paragraphOffset = paragraph.getBoundingClientRect().top;
+
+      if (imageOffset < window.innerHeight - 100) {
+        image.classList.add("fade-in");
+      }
+      if (paragraphOffset < window.innerHeight - 100) {
+        paragraph.classList.add("fade-in");
+      }
+    });
+  </script>
 </body>
 </html>
