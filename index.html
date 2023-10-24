@@ -107,6 +107,24 @@ margin: 0 auto;
         opacity: 3;
         transition: opacity 1s;
     }
+
+
+     .navbar {
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 12px;
+    animation: glow 1s infinite alternate;
+  }
+
+  @keyframes glow {
+    0% {
+      border-color: rgb(255, 2, 2);
+      box-shadow: 0 0 5px rgb(112, 0, 0);
+    }
+    100% {
+      border-color: #000000b6;
+      box-shadow: none;
+    }
+  }
 </style>
 <body >
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #000000b6; ">
