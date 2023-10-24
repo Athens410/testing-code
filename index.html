@@ -149,20 +149,26 @@ margin: 0 auto;
 
    
   <script>
+    var image = document.querySelector(".col-md-6 img");
+    var paragraph = document.querySelector(".col-md-6 p");
+    var lastScrollTop = 0;
 
     window.addEventListener("scroll", function () {
-      var image = document.querySelector(".col-md-6 img");
-      var paragraph = document.querySelector(".col-md-6 p");
-      var imageOffset = image.getBoundingClientRect().top;
-      var paragraphOffset = paragraph.getBoundingClientRect().top;
+      var st = window.pageYYOffset || document.documentElement.scrollTop;
 
-      if (imageOffset < window.innerHeight - 100) {
+      if (st > lastScrollTop) {
+
+        image.classList.remove("fade-in");
+        paragraph.classList.remove("fade-in");
+      } else {
+
         image.classList.add("fade-in");
-      }
-      if (paragraphOffset < window.innerHeight - 100) {
         paragraph.classList.add("fade-in");
       }
+
+      lastScrollTop = st;
     });
   </script>
+
 </body>
 </html>
