@@ -85,14 +85,9 @@ margin: 0 auto;
 }
 }
 
- .fade-in {
-        opacity: 0;
-        transition: opacity 4s;
-    }
-
-    .fade-out {
-        opacity: 1; 
-        transition: opacity 4s;
+  .fade-in {
+        opacity: 3;
+        transition: opacity 1s;
     }
 </style>
 <body >
@@ -139,7 +134,7 @@ margin: 0 auto;
       alt="" srcset="">
   </div>
   <div class="col-md-6">
-    <p>
+    <p class="fade-in">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna eu mauris volutpat vestibulum.
       Phasellus ac dapibus justo. Integer sit amet erat non massa volutpat auctor vel at sapien. Fusce varius nec
       sapien nec malesuada. Sed id nisl eu justo laoreet viverra. Quisque vehicula, odio eget aliquam lacinia, purus
@@ -163,12 +158,12 @@ margin: 0 auto;
 
     if (currentScrollY > lastScrollY) {
 
-      image.classList.add("fade-out");
-      paragraph.classList.add("fade-out");
+      image.classList.remove("fade-in");
+      paragraph.classList.remove("fade-in");
     } else {
 
-      image.classList.remove("fade-out");
-      paragraph.classList.remove("fade-out");
+      image.classList.add("fade-in");
+      paragraph.classList.add("fade-in");
     }
 
     lastScrollY = currentScrollY;
@@ -176,6 +171,7 @@ margin: 0 auto;
 
   window.addEventListener("scroll", handleScroll);
 </script>
+
 
 
 </body>
