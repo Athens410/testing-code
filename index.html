@@ -26,11 +26,29 @@
 body {
     
     background-color: black;
-     background-image: url('red-splatter-4.png');  
+     background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/978/original/red-splatter-4.png?1698273272'); 
+     
+     animation: animate 4s infinite alternate;
             background-repeat: repeat;
-    
+            overflow: auto; 
+            margin: 0;
+            color: white;
 }
 
+
+ @keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+ 
 .turn{
   background-color: azure;
 }
@@ -169,8 +187,9 @@ margin: 0 auto;
       box-shadow: none;
     }
   }
+ 
 </style>
-<body class="lightning">
+<body >
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #000000b6; ">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html" title="Homepage">Home</a>
