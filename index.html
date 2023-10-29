@@ -348,14 +348,24 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/972/origina
 const faders = document.querySelectorAll(`.fade-in`);
 
 
-const appearOptions = {};
+const appearOptions = { th};
 
 const appearOnScroll = new IntersectionObserver
 (function(entries, appearOnScroll){
   entreies.forEach(entry =>{
-    if (!entry.isIntersecting)
+    if (!entry.isIntersecting){
+      return;
+    }else{
+
+      entry.target.classList.add('appear');
+      appearOnScroll.unobserve(entry.target);
+    }
   })
-}, appearOnScroll);
+}, appearOptions);
+
+faders.forEach(fader =>{
+  appearOnScroll.observe(fader);
+})
 
 
 
