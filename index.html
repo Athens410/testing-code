@@ -221,7 +221,7 @@ margin: 0 auto;
   <div class="row">
   <div class="col-6">
     
-    <img class="round fade-in"
+    <img class="fade-in"
       src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/852/original/e9ad3867df57d50ba5627d3e4c76f4ce.jpg?1698181498"
       alt="" srcset="">
 
@@ -343,33 +343,32 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/972/origina
 
 </div>
    
-<script>
 
-const faders = document.querySelectorAll(`.fade-in`);
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
 
+    const appearOptions = {
+      threshold: 1,
+    rootMargin: '0px 0px -100px 0px'
+  };
 
-const appearOptions = { th};
+  const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add('appear');
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+  }, appearOptions);
 
-const appearOnScroll = new IntersectionObserver
-(function(entries, appearOnScroll){
-  entreies.forEach(entry =>{
-    if (!entry.isIntersecting){
-      return;
-    }else{
-
-      entry.target.classList.add('appear');
-      appearOnScroll.unobserve(entry.target);
-    }
-  })
-}, appearOptions);
-
-faders.forEach(fader =>{
-  appearOnScroll.observe(fader);
-})
-
-
-
+  faders.forEach((fader) => {
+      appearOnScroll.observe(fader);
+  });
 </script>
+
+
 
 
 
