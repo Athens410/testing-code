@@ -224,7 +224,7 @@ margin: 0 auto;
       alt="" srcset="">
 
       <h2>About</h2>
-      <p class="glare fade-in "><b class="nine">"How to Get Away with Murder"   </b> is a legal drama and mystery television series that revolves around the life of Annalise
+      <p class="glare "><b class="nine">"How to Get Away with Murder"   </b> is a legal drama and mystery television series that revolves around the life of Annalise
       Keating, a brilliant and charismatic law professor and criminal defence attorney. The show is known for its complex and
       suspenseful narrative, with several intertwined storylines.<b class="nine"> Here's a general overview of what the series is about:  </b> 
      <b class="nine"> Annalise Keating (Viola Davis)</b>   :<br>
@@ -342,10 +342,11 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/972/origina
 </div>
    
 <script>
+     
       const faders = document.querySelectorAll('.fade-in');
 
       const appearOptions = {
-        threshold: 0.5,
+        threshold: 1,
         rootMargin: '0px'
       };
 
@@ -364,6 +365,19 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/972/origina
         appearOnScroll.observe(fader);
       });
 
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const image = document.querySelector('.fade-in');
+
+        if (scrollPosition === 0) {
+          image.classList.add('appear');
+        } else {
+          image.classList.remove('appear');
+        }
+      }
+
+
+  window.addEventListener('scroll', handleScroll);
 </script>
 
 
