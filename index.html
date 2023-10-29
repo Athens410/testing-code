@@ -21,6 +21,8 @@
         <title>C</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="script.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+
 </head>
 <style>
 body {
@@ -31,19 +33,15 @@ body {
     color: white;
     animation: animate 8s infinite;
 }
-.fade-in{
-
-
+.fade-in {
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
- .fade-in.appear{
-
-
-
+.fade-in.appear {
   opacity: 1;
- }
+}
+
 .turn{
   background-color: azure;
 }
@@ -226,7 +224,7 @@ margin: 0 auto;
       alt="" srcset="">
 
       <h2>About</h2>
-      <p class="glare"><b class="nine">"How to Get Away with Murder"   </b> is a legal drama and mystery television series that revolves around the life of Annalise
+      <p class="glare fade-in "><b class="nine">"How to Get Away with Murder"   </b> is a legal drama and mystery television series that revolves around the life of Annalise
       Keating, a brilliant and charismatic law professor and criminal defence attorney. The show is known for its complex and
       suspenseful narrative, with several intertwined storylines.<b class="nine"> Here's a general overview of what the series is about:  </b> 
      <b class="nine"> Annalise Keating (Viola Davis)</b>   :<br>
@@ -302,7 +300,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/972/origina
     </div>
 
 <div class="col-md-3 text-center">
-  <img class="round"
+  <img class="round "
     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/021/original/Untitled-4.png?1698334005"
     alt="" srcset="">
   <p>Billy Brown</p>
@@ -343,31 +341,30 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/972/origina
 
 </div>
    
+<script>
+      const faders = document.querySelectorAll('.fade-in');
 
-  <script>
-    const faders = document.querySelectorAll('.fade-in');
+      const appearOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+      };
 
-    const appearOptions = {
-      threshold: 1,
-    rootMargin: '0px 0px -100px 0px'
-  };
+      const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      }, appearOptions);
 
-  const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          return;
-        } else {
-          entry.target.classList.add('appear');
-          appearOnScroll.unobserve(entry.target);
-        }
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
       });
-  }, appearOptions);
 
-  faders.forEach((fader) => {
-      appearOnScroll.observe(fader);
-  });
 </script>
-
 
 
 
