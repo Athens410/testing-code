@@ -103,6 +103,17 @@ h1, h2{
 }
 
 
+.image-zoom {
+  transform: scale(1.1); 
+  transition: transform 0.3s; 
+}
+
+
+.col-md-3:hover .round {
+  
+  transform: scale(1.1);
+}
+
 
 
 @keyframes moveLeftRight {
@@ -251,7 +262,7 @@ margin: 0 auto;
   <div class="row align-items-center mt-auto">
     <h2>Main Cast</h2>
     <div class="col-md-3 text-center">
-      <img class="round image-zoom"
+      <img class="round "
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/969/original/images_%281%29.jpeg?1698270403"
         alt="" srcset="">
         <p>Viola Davis</p>
