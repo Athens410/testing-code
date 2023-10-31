@@ -85,7 +85,8 @@ h1, h2{
     background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/528/original/ele.png?1698774525');
         background-size: cover;
     text-align: center;
-    padding: 200px;
+    padding: 105px;
+  
 }
 
 
@@ -233,6 +234,8 @@ margin: 0 auto;
 <div class="container">
 <div class="hero">
 
+<h1>Journey</h1>
+
 
 
 </div>
@@ -276,41 +279,7 @@ margin: 0 auto;
    
 <script>
      
-      const faders = document.querySelectorAll('.fade-in');
-
-      const appearOptions = {
-        threshold: 1,
-        rootMargin: '0px'
-      };
-
-      const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          } else {
-            entry.target.classList.add('appear');
-            appearOnScroll.unobserve(entry.target);
-          }
-        });
-      }, appearOptions);
-
-      faders.forEach((fader) => {
-        appearOnScroll.observe(fader);
-      });
-
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        const image = document.querySelector('.fade-in');
-
-        if (scrollPosition === 0) {
-          image.classList.add('appear');
-        } else {
-          image.classList.remove('appear');
-        }
-      }
-
-
-  window.addEventListener('scroll', handleScroll);
+    
 
 
 
