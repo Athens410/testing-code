@@ -43,15 +43,16 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 200px;
   pointer-events: none;
-  z-index: -20;
+  z-index: -2;
   animation: starsGlow 10s infinite alternate;
   overflow: hidden; 
 }
 
 .stars::before {
   content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★"; 
-  margin: 100px;
+
   position: absolute;
   color: white;
   animation: starMove 6s infinite alternate, starGlow 6s infinite alternate;
