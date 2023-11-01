@@ -174,9 +174,22 @@ padding: 20px;
 
 }
 
-.text-overlay {
+
+
+.wrapper {
   background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/609/original/Untitled_copy_3.png?1698876439');
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.col-6 {
+  position: relative;
+  z-index: 1; 
+}
+
+.text-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -184,7 +197,6 @@ padding: 20px;
   padding: 10px;
   border-radius: 10px;
 }
-
 
 
 .col-6{
@@ -264,19 +276,22 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/origina
 
 
 </div>
-<div class="col-6">
- 
-  <div class="text-overlay">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna eu mauris volutpat vestibulum. Phasellus
-      ac
-      dapibus justo. Integer sit amet erat non massa volutpat auctor vel at sapien. Fusce varius nec sapien nec malesuada.
-      Sed id nisl eu justo laoreet viverra. Quisque vehicula, odio eget aliquam lacinia, purus sapien sagittis libero, sit
-      amet commodo dolor nulla id justo.
-    </p>
-
+<div class="wrapper">
+  <div class="col-6">
+    <div class="text-overlay">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna eu mauris volutpat vestibulum.
+        Phasellus
+        ac dapibus justo. Integer sit amet erat non massa volutpat auctor vel at sapien. Fusce varius nec sapien nec
+        malesuada.
+        Sed id nisl eu justo laoreet viverra. Quisque vehicula, odio eget aliquam lacinia, purus sapien sagittis libero,
+        sit
+        amet commodo dolor nulla id justo.
+      </p>
+    </div>
   </div>
 </div>
+
 
 </div>
 </div>
