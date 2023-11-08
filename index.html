@@ -518,21 +518,11 @@ let button = document.querySelector("button");
 button.addEventListener("click", newStep);
 
 
-  let hour = parseInt(prompt("What time is it for you (24-hour format)?"));
-
-  if (hour >= 0 && hour <= 12) {
-    alert(`Good morning! 🌞💛🥞 (AM)`);
-  } else if (hour >= 13 && hour <= 16) {
-    alert(`Good Afternoon! 🌤🌆🌔 (PM)`);
-  } else if (hour >= 17 && hour <= 24) {
-    alert(`Have a Good night! 🌙✨🌃 (PM)`);
-  } else {
-    alert("Invalid time input. Please enter a time between 0 and 24.");
-  }
+  
 
 let name = prompt("What is your name?");
 if(name == "");{
-  alert("Hello, !" + name + ", and Welcome to this page!");
+  alert("Hello!    "     + name  +    "💕💕" , "and Welcome to this page!");
 }
 </script>
 
