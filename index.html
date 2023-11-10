@@ -140,7 +140,7 @@ background: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/00
 
   font-family: 'Red Hat Display', sans-serif;
 
- animation: animate 6s ease-in-out infinite alternate;
+ 
 }
 
 .coder {
@@ -303,7 +303,15 @@ border-radius: 22px;
 .eyes{
    animation: animate 6s ease-in-out infinite alternate;
 }
-
+ @keyframes animate{
+        from{
+            text-shadow: 0 0 20px  #0f00e6;
+        }
+        to{
+            text-shadow: 0 0 30px  #00fffb, 0 0 10px #00d0ff;
+        }
+    }
+   
 
 .col-6 {
   position: relative;
