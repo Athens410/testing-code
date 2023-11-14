@@ -539,19 +539,19 @@ button.addEventListener("click", newStep);
 
   
 
-let name = prompt("What is your name?");
+  let button = document.querySelector("button");
+  button.addEventListener("click", newStep);
 
+  let name = prompt("What is your name?");
   console.log("Script is running");
+  console.log("Name entered:", name);
 
- console.log("Name entered:", name);
-
-  if (name === "") {
+  if (name === null || name === "") {
     console.log("Name is empty. Showing alert.");
     alert("Hello! 💕💕, take a look around and Welcome to this page!");
   } else {
     console.log("Name is not empty. Skipping alert.");
   }
-
 </script>
 
 
