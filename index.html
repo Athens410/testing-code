@@ -603,6 +603,20 @@ let button = document.querySelector("button");
 button.addEventListener("click", newStep);
 
 
+     let hasVisited = localStorage.getItem("hasVisited");
+
+      if (!hasVisited) {
+
+        setTimeout(function () {
+          let name = prompt("What is your name?");
+          console.log("Script is running");
+          console.log("Name entered:", name);
+          alert(`Hello, ${name}! 💕💕 Take a look around and welcome to this page!`);
+
+
+          localStorage.setItem("hasVisited", "true");
+        }, 100);
+      }
 
 </script>
 
