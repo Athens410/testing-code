@@ -156,12 +156,7 @@ background: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/00
 
 
 
-.nav-link i {
-    color: rgb(0, 145, 255) !important;
-  }
-  .nav-link.active {
-    color: rgb(0, 145, 255);
-  }
+
 .nine{
 
 
@@ -234,10 +229,21 @@ margin: 22px;
 
 
 
+.eyes{
+  animation: start 2s linear;
+  background: linear-gradient(100deg, rgb(51, 10, 233), rgb(0, 123, 255), rgb(226, 34, 244));
+  color: white;
+}
 
 
-
-
+@keyframes start {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
 
 .rue{
    font-size: small;
