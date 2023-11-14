@@ -543,14 +543,17 @@ let button = document.querySelector("button");
 
 button.addEventListener("click", newStep);
 
-  
+  function showWelcomeAlert() {
     let name = prompt("What is your name?");
-if(name == ""){
+
+    console.log("Script is running");
+    console.log("Name entered:", name);
 
 
     alert("Hello! "    + name + "💕💕, Take a look around and welcome to this page!");
-  
   }
+  
+    setTimeout(showWelcomeAlert, 100);
 
 </script>
 
