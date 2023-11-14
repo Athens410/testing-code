@@ -121,16 +121,13 @@ background: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/00
 
 }
 @keyframes animate {
-  0% {
-    transform: translateY(0);
+  0%, 20%, 40%, 60%, 80%, 100% {
+    opacity: 0;
   }
-  50% {
-    transform: translateY(-50%);
+  10%, 30%, 50%, 70%, 90% {
+    opacity: 0.5;
   }
-  100% {
-    transform: translateY(0);
-  }
-}
+}lala
 
 
 .code {
