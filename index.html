@@ -36,15 +36,27 @@ body{
   height: 100%;
 
 }
-.hero{
-    background-image: url('https://drive.google.com/uc?export=download&id=1tfdd1MBGAS1FChRW0vSNseFzyOncoHTF');
-        background-size: cover;
-    text-align: center;
-    padding: 105px;
-    margin-top: -70px;
+.hero {
+  position: relative;
+  overflow: hidden;
   border-radius: 12px;
-  
 }
+
+.video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 105px;
+}
+
 
 
 
@@ -316,6 +328,7 @@ margin: 0 auto;
   <div class="row">
     
 <div class="hero">
+ 
 <h1 class="code">The Great Sphinx of Giza</h1>
 
 </div>
