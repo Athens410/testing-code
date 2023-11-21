@@ -117,54 +117,6 @@ body, html {
 margin: 22px;
 
 }
-.bottom-bar {
-  width: 100%;
-  height: 10px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-}
-
-.bottom-bar::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 5px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(10deg, rgb(226, 233, 10), rgb(255, 123, 0), rgb(195, 82, 10));
-  filter: blur(70px), brightness(20px);
-  background-size: 300% 100%;
-  animation: glowAndMove 1s linear infinite, gradientMove 8s linear infinite;
-}
-
-@keyframes glowAndMove {
-  0%, 100% {
-    background-position: 0% 0;
-  }
-  25% {
-    background-position: 0% 0;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 0% 100%;
-  }
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: -100% 0;
-  }
-}
 
 
 .soar{
@@ -311,6 +263,51 @@ margin: 0 auto;
 
 
 
+.news-intro {
+  width: 100%;
+  height: 100px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.block-container {
+  display: flex;
+  animation: slideAnimation 10s linear infinite;
+}
+
+.block {
+  flex: 1;
+  height: 100%;
+}
+
+#block1 {
+  background-color: red;
+}
+
+#block2 {
+  background-color: green;
+}
+
+#block3 {
+  background-color: blue;
+}
+
+
+
+@keyframes slideAnimation {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+}
 
 
 
