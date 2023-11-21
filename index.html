@@ -128,8 +128,8 @@ margin: 22px;
     background: linear-gradient(10deg, rgb(226, 233, 10), rgb(255, 123, 0), rgb(195, 82, 10));
     filter: brightness(9.8) blur(1.8) ;
     background-size: 300% 100%;
-    animation: glowAndMove 1s linear infinite, gradientMove 8s linear infinite, dance 1s ease-in-out infinite alternate ;
-  background-color: #00d0ff;
+    animation: glowAndMove 1s linear infinite, gradientMove 8s linear infinite ;
+
 }
 @keyframes glowAndMove {
   0%, 100% {
@@ -154,14 +154,7 @@ margin: 22px;
     background-position: -100% 0;
   }
 }
-@keyframes dance {
-   from{
-            text-shadow: 0 0 60px  #0f00e6;
-        }
-        to{
-            text-shadow: 0 0 30px  #00fffb, 0 0 10px #00d0ff;
-        }
-}
+
 .soar{
    color: rgb(0, 0, 0);
    font-family: 'Red Hat Display', sans-serif;
