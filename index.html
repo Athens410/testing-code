@@ -50,11 +50,21 @@ background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/fi
   box-sizing: border-box;
   margin-top: -111px;
   border-radius: 12px;
-   background-size: 720px ;
+   background-size: 420px ;
    background-position: center bottom; 
+    animation: startMoves 1s ease-in-out infinite alternate;
 }
 
+@keyframes startMoves {
 
+ from{
+            text-shadow: 0 0 60px  #0f00e6;
+        }
+        to{
+            text-shadow: 0 0 30px  #00fffb, 0 0 10px #00d0ff;
+        }
+
+}
 .max{
 
  margin-top: 44px;
