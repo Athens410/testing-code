@@ -268,7 +268,24 @@ padding: 19px;
   background-color: white;
      font-family: 'Red Hat Display', sans-serif;
 }
-   
+  .background-image {
+  background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/104/752/original/art.png?1700693991');
+  background-size: cover;
+  background-position: center bottom;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 50%; 
+  z-index: -1; 
+  transition: top 0.3s ease-in-out; 
+}
+
+.container {
+  position: relative;
+  z-index: 1; 
+}
+ 
 .lets{
 text-align: center;
 font-size: 12px;
