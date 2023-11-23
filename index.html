@@ -200,9 +200,16 @@ margin-top: 22px;
    text-align: center;
    font-family: 'Red Hat Display', sans-serif;
    color: rgba(134, 91, 55, 0);
-   animation: starts 1s ease-in-out infinite alternate;
+   animation: starts 3s ease-in-out infinite alternate;
 }
-
+@keyframes starts {
+   from{
+            text-shadow: 0 0 60px  #0f00e6;
+        }
+        to{
+            text-shadow: 0 0 30px  #00fffb, 0 0 10px #00d0ff;
+        }
+}
 
  
 
