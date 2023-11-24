@@ -565,6 +565,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/104/752/origina
 </div>
 </form>
   <div class="background-image"></div>
+  <div class="background-deck"></div>
 <script>
 
 
@@ -613,6 +614,17 @@ button.addEventListener("click", newStep);
 
     background.style.top = `${newTop}px`;
   });
+    document.addEventListener('scroll', function () {
+        const scrollPosition = window.scrollX;
+        const windowHeight = window.innerHeight;
+        const background = document.querySelector('.background-deck');
+
+
+        const newTop = windowHeight / 2 + scrollPosition / 2;
+
+
+        background.style.top = `${newTop}px`;
+      });
 
 </script>
 
