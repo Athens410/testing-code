@@ -272,31 +272,21 @@ padding: 19px;
   background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/104/752/original/art.png?1700693991');
   background-size: cover;
   background-position: center bottom;
+
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   top: 50%; 
   z-index: -1; 
-  transition: top 0.3s ease-in; 
+  transition: top 0.4s ease-in; 
 }
 
 .container {
   position: relative;
   z-index: 1; 
 }
-  .background-deck {
-  background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168');
-  background-size: cover;
-  background-position: center bottom;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 50%; 
-  z-index: -1; 
-  transition: top 0.3s ease-in; 
-}
+
 .lets{
 text-align: center;
 font-size: 12px;
@@ -620,7 +610,7 @@ button.addEventListener("click", newStep);
 
   
   document.addEventListener('scroll', function () {
-    const scrollPosition = window.scrollX;
+    const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
     const background = document.querySelector('.background-image');
 
@@ -630,17 +620,7 @@ button.addEventListener("click", newStep);
 
     background.style.top = `${newTop}px`;
   });
-    document.addEventListener('scroll', function () {
-        const scrollPosition = window.scrollX;
-        const windowHeight = window.innerHeight;
-        const background = document.querySelector('.background-deck');
-
-
-        const newTop = windowHeight / 2 + scrollPosition / 2;
-
-
-        background.style.top = `${newTop}px`;
-      });
+  
 
 </script>
 
