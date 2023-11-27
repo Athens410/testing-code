@@ -231,7 +231,7 @@ padding: 20px;
   background-size: 100% auto;
   background-position: center;
 border-radius: 2px;
-  height: 100vh;
+
 
  
 
@@ -249,14 +249,14 @@ padding: 19px;
   background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/104/842/original/Untitled_%282%29.png?1700786996');
   background-size: cover;
   background-position: center bottom;
-border-radius: 12px;
+  border-radius: 12px;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  top: 50%; 
-  z-index: -1; 
-  transition: top 0.2s ease-in; 
+  top: 0; 
+  z-index: -1;
+  transition: top 0.2s ease-in;
 }
 
 .container {
@@ -529,18 +529,15 @@ button.addEventListener("click", newStep);
 
 
   
-  document.addEventListener('scroll', function () {
+ document.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
     const background = document.querySelector('.background-image');
 
-
-    const newTop = windowHeight / 3 + scrollPosition / 2;
-
+    const newTop = scrollPosition / 2;
 
     background.style.top = `${newTop}px`;
   });
-  
 
 </script>
 
