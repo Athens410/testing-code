@@ -598,9 +598,9 @@ served as a tomb for Pharaoh Khufu, with intricate passageways and chambers insi
 
 let name = prompt("whats your name");
 
-if(name == ""){
+if(name === "" || name === null){
 
-  alert("welcome" +name+ "have fun")
+  alert(`Welcome ${name} have fun`);
 }
 
 
