@@ -25,7 +25,14 @@
 
 </head>
 <style>
+  .back{
+background-color: rgb(0, 255, 47);
 
+}
+body{
+
+  background-color: #ff8000;
+}
 h1{
   color: #ffffff;
   text-align: center;
@@ -69,19 +76,7 @@ h1{
 
 
 
-.hero {
-   background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/448/original/Screenshot_2023-11-30_at_10.53.43%E2%80%AFAM.png?1701359695');
- background-position: center 55%; 
- opacity: 0.5;
-  background-size: cover;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  border-radius: 12px;
-  left: 0;
-  right: 0;
-  box-sizing: content;
-}
+
 h1{
 
   color: #ffffff;
@@ -152,23 +147,7 @@ padding: 19px;
   background-color: white;
      font-family: 'Red Hat Display', sans-serif;
 }
-  .background-image {
-background-color: aqua;
-  background-size: cover;
-  background-position: center bottom;
-  border-radius: 12px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0; 
-  z-index: -1;
- 
-}
-body{
 
-  background-color: #ff8000;
-}
 .container {
   position: relative;
   z-index: 1; 
@@ -285,7 +264,7 @@ primary
 </div>
 </form>
 
-  <div class="background-image"></div>
+
 
 
 
@@ -294,15 +273,18 @@ primary
 
 function newStep(){
 
-let body = document.querySelector("back");
+let body = document.querySelector("body");
 
-body.classList.toggle("body");
+body.classList.toggle("back");
 
 }
 
 
 
-let button = document.querySelector("lissa");
+let button = document.querySelector(".lissa");
+
+
+
 
 button.addEventListener("click", newStep);
 
