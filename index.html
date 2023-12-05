@@ -292,8 +292,11 @@ button.addEventListener("click", newStep);
 
   document.getElementById('taskList').addEventListener('click', function (event) {
    
+    setTimeout (function(){
 
       event.target.classList.toggle('completed');
+    },200
+    )
  
   });
 
