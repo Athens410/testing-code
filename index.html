@@ -292,6 +292,20 @@ primary
 
 <script>
 
+function newStep(){
+
+let body = document.querySelector("back");
+
+body.classList.toggle("body");
+
+}
+
+
+
+let button = document.querySelector("lissa");
+
+button.addEventListener("click", newStep);
+
 
 
   document.getElementById('taskList').addEventListener('click', function (event) {
