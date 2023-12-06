@@ -182,6 +182,7 @@ display: block;
   animation-iteration-count: infinite;
 }
 .block1, .block2, .block3 {
+
   padding: 5px;
   display: block;
   position: fixed;
@@ -208,7 +209,34 @@ display: block;
   animation-name: moveLoop3;
 }
 
-
+@keyframes moveLoop1 {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  75% {
+    transform: translateX(50%);
+  }
+}
+@keyframes moveLoop2 {
+  0%, 100% {
+    transform: translateX(100%); 
+  }
+  25% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(50%);
+  }
+}
 
 img{
 max-width: 100%;
