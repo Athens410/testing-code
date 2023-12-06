@@ -178,8 +178,6 @@ display: block;
   left: 0;
   right: 0;
   animation: moveLoop 7s linear infinite; 
-    animation-timing-function: linear;
-  animation-iteration-count: infinite;
 }
 .block1, .block2, .block3 {
   padding: 5px;
@@ -188,30 +186,54 @@ display: block;
   bottom: 0;
   left: 0;
   right: 0;
-    animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  
 }
 .block1{
 
   background-color: rgb(0, 21, 255);
  
+animation: moveLoop 7s linear infinite; 
+}
+.block2 {
+  background-color: rgb(255, 149, 0);
+animation: moveLoop2 3s linear infinite; 
 
 }
 
-@keyframes moveLoop1 {
+@keyframes moveLoop {
+  0% {
+    transform: translateX(0); 
+  }
+  25% {
+    transform: translateX(100%); 
+  }
+  50% {
+    transform: translateX(10%); 
+  }
+  75% {
+    transform: translateX(100%); 
+  }
+}
+@keyframes moveLoop2 {
   0%, 100% {
-    transform: translateX(0);
+    transform: translateX(100%); 
   }
   25% {
     transform: translateX(50%);
   }
   50% {
-    transform: translateX(100%);
+    transform: translateX(0); 
   }
   75% {
     transform: translateX(50%);
   }
 }
+
+
+
+
+
+
 img{
 max-width: 100%;
 padding: 20px;
@@ -272,7 +294,7 @@ primary
 
   </button>
 <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/296/original/Untitled.png?1699409699" alt="" srcset="">
-<legend>haisisnaaauainaianoanosnosnson</legend>
+<legend>haisisnaa</legend>
 
 <div class="whole">
 
