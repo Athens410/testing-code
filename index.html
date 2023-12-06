@@ -199,6 +199,10 @@ animation: moveLoop 7s linear infinite;
 animation: moveLoop2 3s linear infinite; 
 
 }
+.block3 {
+  background-color: rgb(255, 0, 0);
+  animation-name: moveLoop3;
+}
 
 @keyframes moveLoop {
   0% {
@@ -230,7 +234,20 @@ animation: moveLoop2 3s linear infinite;
 }
 
 
-
+@keyframes moveLoop3 {
+  0%, 100% {
+    transform: translateX(100%); 
+  }
+  25% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(0); 
+  }
+  75% {
+    transform: translateX(50%);
+  }
+}
 
 
 
