@@ -152,10 +152,6 @@ padding: 19px;
      font-family: 'Red Hat Display', sans-serif;
 }
 
-.container {
-  position: relative;
-  z-index: 1; 
-}
 
 
 
@@ -171,18 +167,11 @@ margin: 0 auto;
 
 
 
-img{
-max-width: 100%;
-padding: 20px;
 
-
-
-
-}
 
   
 
-    .completed {
+.completed {
       text-decoration: line-through;
       color: #ff8000;
     }
@@ -301,17 +290,11 @@ primary
 
 
 
+document.getElementById('taskList').addEventListener("click", function (event){
 
-  document.getElementById('taskList').addEventListener('click', function (event) {
-   
-    setTimeout (function(){
 
-      event.target.classList.toggle('completed');
-    },0
-    )
- 
-  });
-
+  event.target.classList.toggle('completed')
+})
 
 
 
