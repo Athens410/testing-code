@@ -388,6 +388,7 @@ primary
   const image = document.querySelector('.image-fade-in');
 
   const paragraph = document.querySelector('.paragraph-fade-in');
+  
   const appearOptions = {
     threshold: 1,
     rootMargin: '0px'
@@ -396,47 +397,6 @@ primary
 
  
  
-
-
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        return;
-      } else {
-        entry.target.classList.add('appear');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, appearOptions);
-
-
-  const paragraphs = document.querySelectorAll('.paragraph-fade-in');
-  const images = document.querySelectorAll('.image-fade-in');
-
-  paragraphs.forEach((paragraph) => {
-    appearOnScroll.observe(paragraph);
-  });
-
-  images.forEach((image) => {
-    appearOnScroll.observe(image);
-  });
-
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY;
-
-    if (scrollPosition === 0) {
-      image.classList.add('.appear');
-      paragraph.classList.add('.appear');
-    } else {
-      image.classList.remove('.appear');
-      paragraph.classList.remove('.appear');
-    }
-  };
-
-
-
-  window.addEventListener('scroll', handleScroll);
-
 
 
 
