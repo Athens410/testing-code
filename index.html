@@ -410,8 +410,29 @@ primary
     });
   }, appearOptions);
 
-  
 
+  const paragraphs = document.querySelectorAll('.paragraph-fade-in');
+  const images = document.querySelectorAll('.image-fade-in');
+
+  paragraphs.forEach((paragraph) => {
+    appearOnScroll.observe(paragraph);
+  });
+
+  images.forEach((image) => {
+    appearOnScroll.observe(image);
+  });
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition === 0) {
+      image.classList.add('appear');
+      paragraph.classList.add('appear');
+    } else {
+      image.classList.remove('appear');
+      paragraph.classList.remove('appear');
+    }
+  };
 
 
 
