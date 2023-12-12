@@ -66,6 +66,15 @@ h1{
   }
 }
 
+.fade-in {
+opacity: 0;
+transition: opacity 250ms ease-in;
+}
+
+
+.fade-in.appear {
+opacity: 1;
+}
 
 .nav-link {
 
@@ -377,7 +386,48 @@ primary
 
 <script>
 
+  const faders = document.querySelectorAll('.fade-in');
 
+
+  const appearOptions = {
+    threshold: 1,
+    rootMargin: '0px'
+  };
+
+
+  const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+      }
+    });
+  }, appearOptions);
+
+
+  faders.forEach((fader) => {
+    appearOnScroll.observe(fader);
+  });
+
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    const image = document.querySelector('.fade-in');
+
+
+    if (scrollPosition === 0) {
+      image.classList.add('appear');
+    } else {
+      image.classList.remove('appear');
+    }
+  }
+
+
+
+
+  window.addEventListener('scroll', handleScroll);
 
 
 
