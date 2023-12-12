@@ -385,18 +385,42 @@ primary
 
 <script>
 
-  const image = document.querySelector('.image-fade-in');
+  document.addEventListener('DOMContentLoaded', () => {
+    const setupIntersectionObserver = (element) => {
+      const appearOptions = {
+        threshold: 1,
+        rootMargin: '0px'
+      };
 
-  const paragraph = document.querySelector('.paragraph-fade-in');
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add('appear');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, appearOptions);
 
-  const appearOptions = {
-    threshold: 1,
-    rootMargin: '0px'
-  };
+      appearOnScroll.observe(element);
+    };
+
+    const paragraph = document.querySelector('.paragraph-fade-in');
+    const image = document.querySelector('.image-fade-in');
+
+    setupIntersectionObserver(paragraph);
+    setupIntersectionObserver(image);
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+    };
 
 
  
- 
+  });
+    window.addEventListener('scroll', handleScroll);
 
 
 
