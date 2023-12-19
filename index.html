@@ -197,7 +197,7 @@ margin-bottom: 44px;
 }
  
 p{
-  color: aliceblue;
+  color: rgb(34, 255, 0);
 }
   
 
@@ -519,11 +519,19 @@ primary
 
 <script>
 
+
+
+
  function newStep(){
 
   let body = document.querySelector("body");
 
   body.classList.toggle("back");
+
+
+   let para = document.querySelector("p");
+
+   para.classList.toggle("up");
 
  }
 
