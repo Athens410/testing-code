@@ -201,6 +201,7 @@ text-align: center;
 margin-bottom: 44px;
 
 }
+
  .koo{
 
   background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/279/original/Untitled_%282%29_copy_2.png?1701202034');
@@ -458,9 +459,7 @@ margin: 0 auto;
   </div>
 
   <div class="col order-1">
-    <img class="koo"
-      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168"
-      alt="" srcset="">
+<img  class="kopt" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168" alt="" srcset="">
   
   <button class="jill">change</button>
     <p class="up">
@@ -486,38 +485,8 @@ margin: 0 auto;
 
 
 
-<div class="whole">
-
-<div class="block1"></div>
-<div class="block2"></div>
-<div class="block3"></div>
- <button type="button" class="btn btn-primary"   id="taskList">
-primary
-
-  </button>
-
-<ul>
-  <li>
-<label><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
-</li>
 
 
-<label><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label>
-
-
-</ul>
-
-
-
-
-
-
-
-
-</div>
-<button class="lissa">
-  buton
-</button>
 
 
 
@@ -565,15 +534,13 @@ primary
 
 
 
-document.getElementById('taskList').addEventListener("click", function(event){
-
-  event.target.classList.toggle('completed')
-})
 
 
 function newWorld(){
 
-let img = document
+let img = document.querySelector('.kopt');
+
+img.classList.toggle('koo');
 
 
 
@@ -585,10 +552,8 @@ let img = document
 
 
 
-
-let button = document.querySelector(".jill");
-
-button.addEventListener("click", newWorld);
+    let button = document.querySelector(".jill");
+    button.addEventListener("click", newWorld);
 
 
 
