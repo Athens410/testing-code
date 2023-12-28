@@ -535,18 +535,14 @@ margin: 0 auto;
 
 
 
+    function newWorld() {
+      let img = document.querySelector(".kopt");
+      let newImg = new Image();
+      newImg.src = 'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/279/original/Untitled_%282%29_copy_2.png?1701202034';
+      newImg.alt = "";
 
-function newWorld(){
-
-let img = document.querySelector('.kopt');
-
-img.classList.toggle('koo');
-
-
-
-
-}
-
+      img.parentNode.replaceChild(newImg, img);
+    }
 
 
 
