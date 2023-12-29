@@ -534,22 +534,31 @@ margin: 0 auto;
 
 
 
+  function toggleImage() {
+    let img = document.querySelector(".kopt");
 
-    function newWorld() {
-      let img = document.querySelector(".kopt");
-      let newImg = new Image();
-      newImg.src = 'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/279/original/Untitled_%282%29_copy_2.png?1701202034';
-      newImg.alt = "";
+    if (img == 'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168') {
 
-      img.parentNode.replaceChild(newImg, img);
+   
+
+   
+    }else{
+
+   img == 'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/279/original/Untitled_%282%29_copy_2.png?1701202034'
+
+
     }
 
 
 
 
+  }
+
+
+
 
     let button = document.querySelector(".jill");
-    button.addEventListener("click", newWorld);
+    button.addEventListener("click", toggleImage);
 
 
 
