@@ -558,28 +558,31 @@ margin: 0 auto;
 
 
 
-
-let imgz = document.querySelector(".toggle-image");
-
-  let buton = document.querySelector(".toggle-button");
+ let buton = document.querySelector(".toggle-button");
 
  buton.addEventListener("click", forSquare);
 
 
 
  function forSquare(){
+let imgz = document.querySelector(".toggle-image");
+
+ 
+
+
+
 
 let currentSrc = imgz.src;
 
 
 let newSrc = (currentSrc.includes('rafael-cerqueira'))?
-'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/905/original/pexels-rafael-cerqueira-4737484.jpg?1678907482':
+'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/905/original/pexels-rafael-cerqueira-4737484.jpg?1678907482' :
   'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/609/original/Untitled_copy_3.png?1698876439';
 
 imgz.src= newSrc;
 
 
-imgz.classList.toggle("")
+imgz.classList.toggle("jop")
  }
 
 </script>
