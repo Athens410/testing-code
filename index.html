@@ -534,31 +534,18 @@ margin: 0 auto;
 
 
 
-  function toggleImage() {
-    let img = document.querySelector(".kopt");
-
-    if (img == 'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168') {
-
-   
-
-   
-    }else{
-
-   img == 'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/279/original/Untitled_%282%29_copy_2.png?1701202034'
-
-
+  function newWorld() {
+      let img = document.querySelector(".kopt");
+      img.classList.toggle("koo");
     }
 
-
-
-
-  }
-
-
-
-
     let button = document.querySelector(".jill");
-    button.addEventListener("click", toggleImage);
+    button.addEventListener("click", newWorld);
+
+
+
+
+
 
 
 
