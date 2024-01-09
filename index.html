@@ -553,39 +553,12 @@ document.getElementById('fork').addEventListener("click",function(event){
 
 
 
-    function newWorld() {
-      let img = document.querySelector(".jazz");
-      let currentSrc = img.src;
-      let newSrc = (currentSrc.includes('pexels')) ?
-        'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/279/original/Untitled_%282%29_copy_2.png?1701202034' :
-        'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/900/original/pexels-pixabay-209831.jpg?1678907168';
-
-      img.src = newSrc;
-      img.classList.toggle("pop");
-    }
-
-  let button = document.querySelector(".jill");
-  button.addEventListener("click", newWorld);
 
 
 
 
 
-
-  let buttons = document.querySelector(".toggle-button");
-  buttons.addEventListener("click", toggleImage);
-  let imgElement = document.querySelector(".toggle-image");
-
-  function toggleImage() {
-    let currentSrc = imgElement.src;
-
-    let newSrc = (currentSrc.includes('rafael-cerqueira')) ?
-      'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/609/original/Untitled_copy_3.png?1698876439' :
-      'https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/905/original/pexels-rafael-cerqueira-4737484.jpg?1678907482';
-
-    imgElement.src = newSrc;
-    imgElement.classList.toggle("jop");
-  }
+ 
 
 </script>
 
