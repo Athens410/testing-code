@@ -553,7 +553,7 @@ document.getElementById('fork').addEventListener("click",function(event){
 
 
 
-document.addEventListener("DOMContentLoaded"(function(){
+  document.addEventListener("DOMContentLoaded",function(){
 
 
   let apiKey = "live_cFlibfBzApkxhjCnHR9ZEMfO6nnKB1yVNhviSZxM7avitKJVTfAWZgMRqMwMFmcq";
@@ -568,11 +568,25 @@ try {
      displayCatImage(data[0].url);
 }
 
-   catch{
-
+   catch(error){
+      console.error("Error fetching cat images:", error);
 
   }
-}))
+
+}
+
+function displayCatImage(imageUrl){
+
+  const catImagesContainer = document.getElementById("catImages");
+  const imgElement = document.createElement("img");
+
+imgElement.src = imageUrl;
+
+catImagesContainer.appendChild(imgElement);
+
+}
+  fetchCatImages();
+})
 
 
 
