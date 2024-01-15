@@ -595,7 +595,16 @@ catImagesContainer.appendChild(imgElement);
 })
 
 
+  document.addEventListener('DOMContentLoaded', function () {
+    twemoji.parse(document.body);
 
+    new Typewriter("h1", {
+      strings: `🎇 Iconic Celebrity Challenge`,
+      autoStart: true,
+      cursor: "",
+      delay: 100,
+    });
+  });
  
  
 
