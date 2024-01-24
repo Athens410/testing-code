@@ -271,10 +271,10 @@ margin: 0 auto;
 
 <div class="three">
 
-
+<h2 class="blue"></h2>
 
   <div class="row">
-    <div class="col-3">
+    <div class="col-md-6">
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/897/original/Screenshot_2024-01-23_at_8.47.12%E2%80%AFPM.png?1706060843"
         alt="" srcset="" class="obv">
@@ -305,7 +305,7 @@ margin: 0 auto;
  
   
     <div class=" mt-5">
-<h2 class="blue"></h2>
+
     </div>
 
 
@@ -572,7 +572,7 @@ catImagesContainer.appendChild(imgElement);
     function rotateBackground() {
       document.querySelector('.three').style.backgroundImage = backgrounds[currentBackgroundIndex];
       currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
-      setTimeout(rotateBackground, 8000); 
+      setTimeout(rotateBackground, 4000); 
     }
 
     rotateBackground();
