@@ -549,53 +549,11 @@ margin: 0 auto;
 
 <script>
 
-document.getElementById("fork").addEventListener("click", function(event){
-
-event.target.classList.toggle("completed")
-
-})
 
 
 
 
 
-
-
-
-  document.addEventListener("DOMContentLoaded",function(){
-
-
-  let apiKey = "live_cFlibfBzApkxhjCnHR9ZEMfO6nnKB1yVNhviSZxM7avitKJVTfAWZgMRqMwMFmcq";
-
-  async function fetchCatImages(){
-
-try {
-  const response = await fetch('https://api.thecatapi.com/v1/images/search?api_key=${live_cFlibfBzApkxhjCnHR9ZEMfO6nnKB1yVNhviSZxM7avitKJVTfAWZgMRqMwMFmcq}');
-
-  const data = await response.json();
-
-     displayCatImage(data[0].url);
-}
-
-   catch(error){
-      console.error("Error fetching cat images:", error);
-
-  }
-
-}
-
-function displayCatImage(imageUrl){
-
-  const catImagesContainer = document.getElementById("catImages");
-  const imgElement = document.createElement("img");
-
-imgElement.src = imageUrl;
-
-catImagesContainer.appendChild(imgElement);
-
-}
-  fetchCatImages();
-})
 
 
   $(document).ready(function () {
