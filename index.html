@@ -23,7 +23,7 @@
       rel="stylesheet" />
     
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
     
     <!-- Lettering.js -->
     <script src="https://cdn.jsdelivr.net/jquery.lettering/0.7.0/jquery.lettering.min.js"></script>
@@ -598,6 +598,9 @@ catImagesContainer.appendChild(imgElement);
 })
 
 
+  $(document).ready(function () {
+    $(".fancy_title").lettering();
+  });
 
 
     new Typewriter("h1", {
@@ -632,9 +635,7 @@ catImagesContainer.appendChild(imgElement);
 
 
 
-  $(document).ready(function () {
-      $(".fancy_title").lettering();
-    });
+
 </script>
 
 
