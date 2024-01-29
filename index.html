@@ -15,7 +15,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
-
+<script src="https://jsuites.net/v4/jsuites.js"></script>
+<link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
 <style>
   .back{
 background-color: rgb(0, 0, 0);
@@ -288,6 +289,7 @@ margin: 0 auto;
     </div>
 
 
+<div id="dropdown1"></div>
 
 
 <h2 class="fancy_title">Some Title</h2>
@@ -516,7 +518,17 @@ margin: 0 auto;
       cursor: "",
       delay: 100,
     });
-
+  jSuites.dropdown(document.getElementById('dropdown1'), {
+    data: [
+      'City of London',
+      'City of Westminster',
+      'Kensington and Chelsea',
+      'Hammersmith and Fulham', // (...)
+    ],
+    autocomplete: true,
+    multiple: true,
+    width: '280px',
+  });
 </script>
 
 
