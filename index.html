@@ -17,6 +17,11 @@
 
 <script src="https://jsuites.net/v4/jsuites.js"></script>
 <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+
+
+<script src="https://jsuites.net/v4/jsuites.js"></script>
+<script src="https://jsuites.net/v4/jsuites.webcomponents.js"></script>
+<link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
 <style>
   .back{
 background-color: rgb(0, 0, 0);
@@ -531,16 +536,20 @@ margin: 0 auto;
       cursor: "",
       delay: 100,
     });
+
+
+
   jSuites.dropdown(document.getElementById('dropdown1'), {
     data: [
       'City of London',
       'City of Westminster',
       'Kensington and Chelsea',
-      'Hammersmith and Fulham', // (...)
+      'Hammersmith and Fulham', 
     ],
     autocomplete: true,
     multiple: true,
     width: '280px',
+   
   });
 </script>
 
