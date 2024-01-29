@@ -308,7 +308,7 @@ margin: 0 auto;
 
 
 </div>
-<jsuites-calendar value="2020-01-20"></jsuites-calendar>
+<jsuites-calendar value="2020-01-20"><input id='calendar' /></jsuites-calendar>
 
 <h2 class="fancy_title">Some Title</h2>
 
@@ -559,6 +559,10 @@ margin: 0 auto;
     document.querySelector('jsuites-calendar').addEventListener('onclose', function (e) {
       console.log('Calendar is closed');
     });
+    jSuites.calendar(document.getElementById('calendar'), {
+        format: 'DD/MM/YYYY HH:MM',
+        time: true,
+      });
 </script>
 
 
