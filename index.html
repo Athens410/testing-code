@@ -308,7 +308,7 @@ margin: 0 auto;
 
 
 </div>
-
+<jsuites-calendar value="2020-01-20"></jsuites-calendar>
 
 <h2 class="fancy_title">Some Title</h2>
 
@@ -551,6 +551,14 @@ margin: 0 auto;
     width: '280px',
    
   });
+
+
+  document.querySelector('jsuites-calendar').addEventListener('onchange', function (e) {
+      console.log('New value: ' + e.target.value);
+    });
+    document.querySelector('jsuites-calendar').addEventListener('onclose', function (e) {
+      console.log('Calendar is closed');
+    });
 </script>
 
 
