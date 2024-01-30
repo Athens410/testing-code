@@ -58,10 +58,23 @@ h1 {
   font-family: 'Red Hat Display', sans-serif;
 text-align: center;
 margin-top: 63px;
+
+animation: starVerse 5s linear infinite;
 }
 
 
+@keyframes starVerse {
 
+ from{
+            text-shadow: 0 0 20px  #0d910b;
+        }
+        to{
+            text-shadow: 0 0 30px  #bba908, 0 0 10px #e77a0d;
+        }
+ to {
+    box-shadow: 0 0 40px 5px rgba(239, 239, 239, 0.9);
+  }
+}
 
 
 @keyframes startMoves {
