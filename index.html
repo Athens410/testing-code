@@ -25,19 +25,15 @@
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 <style>
-body{
 
-  background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/883/original/Untitled_%282%29.png?1706575440');
-   background-size: cover;
-   max-width: 100%;
-}
  .background-image {
         background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/883/original/Untitled_%282%29.png?1706575440');
        background-size: cover;
-  border-radius: 12px;
+ width: 100%;
+        height: 100%;
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: -22px;
   right: 0;
   top: 0;
   z-index: -2;
@@ -94,6 +90,35 @@ animation: starVerse 5s linear infinite;
   color: #d6a574 !important;
 }
 
+.horizontal-line {
+  position: fixed;
+  width: 100%;
+  height: 2px;
+  background-color: green;
+  top: 50%;
+  animation: horizontalMove 5s linear infinite, glowEffect 2s ease-in-out infinite alternate;
+}
+
+@keyframes horizontalMove {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes glowEffect {
+  0% {
+    box-shadow: 0 0 10px yellow;
+  }
+  100% {
+    box-shadow: 0 0 20px yellow;
+  }
+}
 
 
 
