@@ -1,253 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tetsing code</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tetsing code</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-N4dBYXKrlYJ1QsEnEftmKa48Mmkj/wbS5nkBVKFifN8Z9fhK+LYaN2CCpFNYlj1ikfqG56Lvbr8zR3JFmbn3Jg=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <!-- Bootstrap CSS -->
-
-  
-
-
-
-
-<style>
-
-body {
-   background-color: #00ff37;
-   
-}
-
-
-
-
-
-
-
-
-h1 {
-  color: #ffffff;
-
-  font-family: 'Red Hat Display', sans-serif;
-text-align: center;
-margin-top: 63px;
-
-animation: starVerse 5s linear infinite;
-}
-
-
-@keyframes starVerse {
-
- from{
-            text-shadow: 0 0 20px  #05a502;
-        }
-        to{
-            text-shadow: 0 0 30px  #ffffff, 0 0 10px #00ff37;
-        }
- 
-}
-
-
-
-.nav-link {
-
-  color: #32b920 !important;
-}
-
-
-
-
-
-
-
- h2{
-
-  text-align: center;
-
-
-  color: aliceblue;
-  
-
-
-  font-family: 'Red Hat Display', sans-serif;
-
-}
-
-
-
-.content {
-    position: relative;
-    z-index: 5; 
-}
-
-
-.box{
-
-
-  margin-top: 86px;
-
-  padding: 44px;
-  background-color: #384337;
-
-   animation: rotate 5s infinite linear ;
-border: 2px solid rgb(11, 243, 19);
-}
-@keyframes rotate {
-
- from{
-            border: 0 0 20px  #1a1918;
-        }
-        to{
-            border: 0 0 30px  #ffffff, 0 0 10px #ffffff;
-        }
-         0% {
-    box-shadow: 0 0 10px yellow;
-  }
-  100% {
-    box-shadow: 0 0 20px yellow;
-  }
-
-        
-
-}
-
-
-
-
-.rue{
-   font-size: small;
-   text-align: center;
-   font-family: 'Red Hat Display', sans-serif;
-color: #ffffff;
-animation: start 1s ease-in-out infinite alternate;
-
-}
-
- @keyframes start {
-   from{
-            text-shadow: 0 0 20px  #010101;
-        }
-        to{
-            text-shadow: 0 0 30px  #161515, 0 0 10px #000000;
-        }
-}
-
-
-
-
-
-.tape{
-
-
-  margin-top: -3px;
-}
-
-
-.tape1{
-
-  margin-bottom: -13px;
-}
-
-.container{
-
-
-margin: 0 auto;
-}
-
-
-@media (max-width: 798px) {
-.obv{
-margin: 0 auto;
-}
-}
-img{
-  max-width: 100%;
-  
-}
-
-
-
-
-.col-6{
-margin: 0 auto;
-}
-@media (max-width: 798px) {
-.col-6{
-margin: 0 auto;
-}
-}
-
-
-
-
-</style>
- </head> 
-
+  <style>
+    body {
+      background-color: #e9f3eb;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-family: 'Red Hat Display', sans-serif;
+      text-align: center;
+      margin-top: 63px;
+      animation: starVerse 5s linear infinite;
+    }
+
+    @keyframes starVerse {
+      from {
+        text-shadow: 0 0 20px #05a502;
+      }
+
+      to {
+        text-shadow: 0 0 30px #ffffff, 0 0 10px #00ff37;
+      }
+    }
+
+    .nav-link {
+      color: #32b920 !important;
+    }
+
+    h2 {
+      text-align: center;
+      color: aliceblue;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+
+    .content {
+      position: relative;
+      z-index: 5;
+    }
+
+    .box {
+      margin-top: 86px;
+      padding: 44px;
+      background-color: #384337;
+      animation: rotate 5s infinite linear;
+      border: 2px solid rgb(11, 243, 19);
+    }
+
+    @keyframes rotate {
+      from {
+        border: 0 0 20px #1a1918;
+      }
+
+      to {
+        border: 0 0 30px #ffffff, 0 0 10px #ffffff;
+      }
+
+      0% {
+        box-shadow: 0 0 10px yellow;
+      }
+
+      100% {
+        box-shadow: 0 0 20px yellow;
+      }
+    }
+
+    .rue {
+      font-size: small;
+      text-align: center;
+      font-family: 'Red Hat Display', sans-serif;
+      color: #ffffff;
+      animation: start 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes start {
+      from {
+        text-shadow: 0 0 20px #010101;
+      }
+
+      to {
+        text-shadow: 0 0 30px #161515, 0 0 10px #000000;
+      }
+    }
+
+    .tape {
+      margin-top: -3px;
+    }
+
+    .tape1 {
+      margin-bottom: -13px;
+    }
+
+    .container {
+      margin: 0 auto;
+    }
+
+    @media (max-width: 798px) {
+      .obv {
+        margin: 0 auto;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .col-6 {
+      margin: 0 auto;
+    }
+
+    @media (max-width: 798px) {
+      .col-6 {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
 
 <body>
+  <div class="single-item">
+    <div>your content</div>
+    <div>your content</div>
+    <div>your content</div>
+  </div>
 
-
-
-
-
-
-
-
-
-
-<ul class="nav justify-content-center mt-5">
-  <li class="nav-item">
-    <a class="nav-link active" href="https://www.shecodes.io/" target="_blank" title="SheCodes profile">SheCodes</a>
-  </li>
-  
-  <li class="nav-item">
-    <a class="nav-link" href="https://linkedin.com/in/athenah-c-2639251a0" target="_blank" title="linkedin profile"> <i
-        class="fa-brands fa-linkedin"></i></a>
-  </li>
- 
-
+  <ul class="nav justify-content-center mt-5">
+    <li class="nav-item">
+      <a class="nav-link active" href="https://www.shecodes.io/" target="_blank" title="SheCodes profile">SheCodes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://linkedin.com/in/athenah-c-2639251a0" target="_blank" title="linkedin profile">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </li>
   </ul>
 
-  </div><!--first container-->
-<div id="particles-js"></div>
+  <div id="particles-js"></div>
+
+  <ul class="timezx">
+    <li>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">© 2021 SheCodes All rights reserved.</a>
+    </li>
+  </ul>
+
+  <form>
+    <div class="rue">
+      <h3> 🌱🐸💚This website was coded by, Athenah Coucean 🐸💚🌱 </h3>
+    </div>
+  </form>
 
 
+  <script src="slick/slick.min.js"></script>
 
-  <li class="timezx">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">© 2021 SheCodes All rights reserved.</a>
-  </li>
-
-
-</ul>
-
-<form>
- 
-
-<div class="rue">
-  <h3> 🌱🐸💚This website was coded by, Athenah Coucean 🐸💚🌱  </h3>
-
-</div>
-</form>
-
-
-<div class="background-image"></div>
-
-<script>
-
- 
-   
-  
-
-
-
-
-
-</script>
-
-
-
-
+  <script>
+   $('.single-item').slick();
+  </script>
 </body>
+
 </html>
