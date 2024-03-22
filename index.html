@@ -9,10 +9,9 @@
 
   <!-- Bootstrap CSS -->
 
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-  integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <style>
     body {
       background-color: #e9f3eb;
@@ -130,10 +129,10 @@
 </head>
 
 <body>
-  <div class="single-item">
+  <div class="test">
     <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
+    <div>your dog</div>
+    <div>your fish</div>
   </div>
 
   <ul class="nav justify-content-center mt-5">
@@ -161,9 +160,24 @@
     </div>
   </form>
 
-  <script >
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script >
+  $(document).ready(function () {
+    $('.test').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 2
+    });
+  });
   </script>
+
+
 </body>
 
 </html>
