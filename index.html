@@ -85,20 +85,7 @@ function greet(name){
   return `hello ${name}`;
 }
 
-console.log(greet('jat'));
 
-document.addEventListener('DOMContentLoaded',() =>{
-const message = document.getElementById('message');
-const button = document.getElementById('toggleButton');
-
-  let isActive = false;
-
-  function toggleMessage(){
-if(isActive){
-message.textContent  = 'click this button ';
-message.classList.remove('active');
-toggleButton.textContent  =  'toggle message';
-}
 
 
 
