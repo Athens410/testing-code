@@ -15,4 +15,5 @@ h2{
 .toggleButton{
 border-radius: 12px;
 border: gold solid 2px;
+padding: 6px;
 }
