@@ -19,7 +19,7 @@ h2{
   font-family:var(--main-font);
 }
 h3{
-    
+  font-family: var(--main-font);  
 }
 .toggleButton{
 border-radius: 12px;
