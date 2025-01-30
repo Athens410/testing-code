@@ -4,6 +4,7 @@ body{
 :root{
 --main-font:"EB Garamond",serif ;
 --main-color: white;
+
 }
 
 h1{
@@ -32,5 +33,5 @@ font-family: var(--main-font);
 }
 li{
 
-    
+
 }
