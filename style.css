@@ -26,6 +26,6 @@ color: white;
 
 }
 p{
+color: var(--main-color);
 
-    
 }
