@@ -33,5 +33,5 @@ font-family: var(--main-font);
 }
 li{
 color: var(--second-color);
-
+font-family: var(--main-font);
 }
