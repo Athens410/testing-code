@@ -21,7 +21,7 @@ h2{
 h3{
   font-family: var(--main-font);  
   text-align: center;
-  
+  color: var(--main-color);
 }
 .toggleButton{
 border-radius: 12px;
