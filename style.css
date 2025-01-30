@@ -4,7 +4,7 @@ body{
 :root{
 --main-font:"EB Garamond",serif ;
 --main-color: white;
-
+--second-color:rgba(255, 255, 48, 0.628);
 }
 
 h1{
