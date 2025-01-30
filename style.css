@@ -24,7 +24,7 @@ padding: 6px;
 background-color: blueviolet;
 color: white;
 margin: 0 auto;
-
+display: block;
 }
 p{
 color: var(--main-color);
