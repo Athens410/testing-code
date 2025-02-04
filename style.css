@@ -54,7 +54,7 @@ position: absolute;
 top: 50px;
 left: 50px;
 }
-
+/*fixed*/
 .two{
 background-color: greenyellow;
 color: var(--main-color);
