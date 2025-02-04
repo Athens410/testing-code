@@ -51,6 +51,7 @@ color: var(--main-color);
 background-color: aqua;
 padding: 10px;
 position: absolute;
+
 }
 .two{
 background-color: greenyellow;
