@@ -59,7 +59,7 @@ background-color: greenyellow;
 color: var(--main-color);
 padding: 10px;
 position: fixed;
-
+top: 20px;
 
 }
 .three{
