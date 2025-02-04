@@ -62,5 +62,6 @@ position: fixed;
 background-color: red;
   color: var(--main-color);  
 padding: 10px;
+position: relative;
 
 }
