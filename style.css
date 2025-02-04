@@ -54,7 +54,7 @@ padding: 10px;
 .two{
 background-color: greenyellow;
 color: var(--main-color);
-
+padding: 10px;
 }
 .three{
 background-color: red;
