@@ -46,6 +46,10 @@ font-family: var(--main-font);
 background-color: rgba(0, 0, 255, 0.519);
 
 }
+.magic{
+    
+}
+
 /*absolute*/
 .one{
 color: var(--main-color);
