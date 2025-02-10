@@ -69,7 +69,7 @@ background-color: greenyellow;
 color: var(--main-color);
 padding: 10px;
 position: fixed;
-top: 20px;
+top: 20px;/*moves down the higher number you put*/
 left:20px;
 }
 /*relative*/
