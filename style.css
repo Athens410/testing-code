@@ -60,7 +60,7 @@ color: var(--main-color);
 background-color: aqua;
 padding: 10px;
 position: absolute;
-top:50px;
+top:50px; 
 left: 50px;
 }
 /*fixed*/
