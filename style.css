@@ -93,3 +93,4 @@ background-color: blueviolet;
 padding: 6px;
 color: var(--second-color);
 }
+.absolute-button:hover{}
