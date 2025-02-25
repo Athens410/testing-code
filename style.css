@@ -84,7 +84,7 @@ top: 20px;/*moves down the higher number you put*/
 right:20px;
 }
 .absolute-button{
-  font-family:var(--main-font) ;
+  font-family:var(--main-font);
   position: absolute;
 border: none;
 border-radius: 9px;
