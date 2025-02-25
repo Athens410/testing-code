@@ -87,4 +87,5 @@ right:20px;
   font-family:var(--main-font) ;
   position: absolute;
 border: none;
+border-radius: 9px;
 }
