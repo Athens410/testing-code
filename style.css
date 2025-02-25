@@ -94,6 +94,6 @@ padding: 6px;
 color: var(--second-color);
 }
 .absolute-button:hover{
- 
+ background-color: black;
   color: aliceblue;
 }
