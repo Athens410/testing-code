@@ -4,7 +4,9 @@ body{
 .ren{
   background-color: rgb(48, 48, 41);
 }
-img{}
+img{
+  
+}
 :root{
 --main-font:"EB Garamond",serif ;
 --main-color: white;
