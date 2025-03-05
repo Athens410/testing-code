@@ -99,7 +99,7 @@ color: var(--second-color);
 }
  .card img{
   border-radius: 13px;
-  background-color: aqua;
+  
   display: block;
 }
 .card-content{
