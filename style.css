@@ -97,11 +97,11 @@ color: var(--second-color);
  background-color: black;
   color: aliceblue;
 }
-.card img{
+.cards img{
 height: 200px;
   width: 100%;
   object-fit: cover;
-  
+ 
 }
 .card-content{
 background-color: rgb(117, 98, 138);
