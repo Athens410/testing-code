@@ -97,7 +97,7 @@ color: var(--second-color);
  background-color: black;
   color: aliceblue;
 }
-.cards img{
+ .card-container img{
   border-radius: 13px;
 }
 .card-content{
