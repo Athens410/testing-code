@@ -99,6 +99,7 @@ color: var(--second-color);
 }
  .card-container img{
   border-radius: 13px;
+  
 }
 .card-content{
 background-color: rgb(117, 98, 138);
