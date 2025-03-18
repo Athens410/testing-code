@@ -117,5 +117,5 @@ gap: 10px;
 }
 .message{
   margin-top: 15px;
-  
+  color: var(--second-color);
 }
