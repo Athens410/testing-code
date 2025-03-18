@@ -120,6 +120,6 @@ gap: 10px;
   font-weight: bold;
 }
 .secondBtn{
-
+font-family: var(--main-font);
 
 }
