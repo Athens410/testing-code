@@ -88,6 +88,7 @@ right:20px;
 border: none;
 border-radius: 9px;
 cursor: pointer;
+
 background-color: blueviolet;
 padding: 6px;
 color: var(--second-color);
